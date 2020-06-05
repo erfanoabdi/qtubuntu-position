@@ -1,0 +1,28 @@
+Source: qtubuntu-position
+Section: libs
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9),
+               cmake,
+               libgtest-dev,
+               libubuntu-application-api-dev (>= 3.0.1),
+               libprocess-cpp-dev (>= 0.0.1+14.04.20131212),
+               ubuntu-application-api3-test,
+               pkg-config,
+               qt5-default,
+               qtbase5-dev,
+               qtlocation5-dev,
+               qtpositioning5-dev,
+Standards-Version: 3.9.4
+Homepage: https://launchpad.net/qtubuntu-position
+
+Package: qtubuntu-position
+Architecture: i386 amd64 armhf arm64
+Pre-Depends: ${misc:Pre-Depends},
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: libqt5location5-plugins (<< 5.0~git20130805-0ubuntu4)
+Replaces: libqt5location5-plugins (<< 5.0~git20130805-0ubuntu4)
+Description: QtPosition plugins for Android gps
+ QtPosition plugin for the qtubuntu (hybris) backend

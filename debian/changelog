@@ -1,0 +1,5 @@
+qtubuntu-position (0.1+ubports) xenial; urgency=medium
+
+  * Initial import from qtubuntu-sensors
+
+ -- Erfan Abdi <erfangplus@gmail.com>  Fri, 5 Jun 2020 15:41:26 +0100
